@@ -110,17 +110,15 @@ class _HomePageState extends State<HomePage> {
                     ? Text(f.format(selectedDate))
                     : const Text("Enter Your Birthday")),
           ),
-
-          // Checkbox(
-          //   checkColor: Colors.white,
-          //   value: isChecked,
-          //   onChanged: (bool? value) {
-          //     setState(( ) {
-          //       isChecked = value!;
-          //     });
-          //   },
-          // ),
-
+          Checkbox(
+            checkColor: Colors.white,
+            value: isChecked,
+            onChanged: (bool? value) {
+              setState(() {
+                isChecked = value!;
+              });
+            },
+          ),
           Container(
             margin: const EdgeInsets.all(12),
             height: 150,
